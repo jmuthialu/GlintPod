@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Glintpodv1</title>
+  <title>Glintpod</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    yield(:customCSS), :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
+<body <%=yield(:bodyId) %> >
 <%= yield %>
-
+<footer>
+  <%= javascript_include_tag "application" %>
+</footer>
 </body>
 </html>

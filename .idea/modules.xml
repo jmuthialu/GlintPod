@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../CodePractise/JS and JQuery/JS-GoodPractise/03-Slider/.idea/03-Slider.iml" filepath="$PROJECT_DIR$/../../CodePractise/JS and JQuery/JS-GoodPractise/03-Slider/.idea/03-Slider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../glintpodold050615/.idea/glintpodold050615.iml" filepath="$PROJECT_DIR$/../glintpodold050615/.idea/glintpodold050615.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/glintpodv1.iml" filepath="$PROJECT_DIR$/.idea/glintpodv1.iml" />
     </modules>
