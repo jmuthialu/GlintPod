@@ -1,6 +1,6 @@
 var dnArrow1 = $('#dnArrow1');
 var sec2 = $('#sec2');
-var sec3 = $('#sec3'); 
+var sec3 = $('#sec3');
 var downArrowInterval = setInterval('downArrowFlash()', 3000);
 
 
