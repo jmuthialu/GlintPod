@@ -1,28 +1,27 @@
-var dnArrow1 = $('#dnArrow1');
-var sec2 = $('#sec2');
-var sec3 = $('#sec3');
+var dnArrow = $('.dnArrow');
 var downArrowInterval = setInterval('downArrowFlash()', 3000);
-
 
 $('body').animate({
     opacity : 1
 },2000);
 
-
 function downArrowFlash() {
-    dnArrow1.fadeOut(2000).fadeIn(2000).delay(3000);
+    dnArrow.fadeOut(1500).fadeIn(2000).delay(3000);
 }
 
-$(dnArrow1).on('click', function(e) {
+$(dnArrow).on('click', function(e) {
+    var currentSect = $(this).parents('.sections');
+    var top = currentSect.offset().top;
+    var bottom = top + currentSect.height();
+    console.log (bottom);
     $('html, body').animate({
-        scrollTop: sec2.offset().top + 5
+        scrollTop: bottom + 5
     }, 700);
 });
 
 
-/*
-var $images = $('.images');
-var imgCount = $('.images').length -1;
+var $images = $('.rotateImages');
+var imgCount = $images.length -1;
 var count = 0;
 
 console.log('image Count: ', imgCount);
@@ -37,4 +36,3 @@ function imageChange(){
     count = count >= imgCount ? 0: count +=1;
     $images.eq(count).fadeIn(1500);
 }
-*/

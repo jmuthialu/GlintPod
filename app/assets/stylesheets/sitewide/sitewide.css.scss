@@ -10,22 +10,39 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 1em;
+  font-weight: 100;
   line-height: 1em;
   height: 100%;
+  color: #7e7e7e;
 }
 
 .sections {
   position: relative;
   width: 100%;
   height: 90%;
+  overflow: hidden;
+}
+
+.secFooter {
+  position: relative;
+  width: 100%;
+  height: 10%;
 }
 
 #sec2 {
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
 }
 
 #sec3 {
-  background-color: red;
+  background-color:  #fff //#13c5f5; //13ACD9
+}
+
+#sec4 {
+  background-color: #f0f0f0;
+}
+
+#sec5 {
+  background-color: #5BC4C2;
 }
 
 #sec1Container {
@@ -48,7 +65,6 @@ body {
 }
 
 .sec1Text {
-  color: #7e7e7e;
   margin: 5px 0;
   font-size: 3.5em;
   font-weight: 100;
@@ -61,8 +77,8 @@ body {
 }
 
 .dnArrow {
-  position: fixed;
-  top: 80%;
+  position: relative;
+  top: 85%;
   left: 50%;
   width: 30px;
   height: 50px;
@@ -75,10 +91,112 @@ body {
 }
 
 
+.lhs {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+}
+
+.lhsImages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
+}
 
 
+.rhs {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: 50%;
+  height:100%;
+}
+
+.rhsTextBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
+}
+
+.rhsText {
+  font-size: 2.5em;
+  font-weight:100;
+  line-height: 1.5em;
+
+}
 
 
+.FullPicSection {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.centerImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
+}
+
+.centerTextBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
+}
+
+.centerText {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+
+}
 
 
 
