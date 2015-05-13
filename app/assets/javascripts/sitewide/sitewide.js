@@ -13,10 +13,25 @@ $(dnArrow).on('click', function(e) {
     var currentSect = $(this).parents('.sections');
     var top = currentSect.offset().top;
     var bottom = top + currentSect.height();
+    var windowHt = $(window).height(); //gives Viewport Height
+    var documentHt = $(document).height(); //gives the height of the document and it can be ouside the scroll area
+    var scrollTop = $(document).scrollTop(); //current top position of the document in the viewport
+
     console.log (bottom);
-    $('html, body').animate({
-        scrollTop: bottom + 5
-    }, 700);
+
+
+    if ((scrollTop + windowHt) < documentHt) {
+        $('html, body').animate({
+            scrollTop: bottom + 5
+        }, 700);
+    } else {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+    }
+
+
+
 });
 
 
