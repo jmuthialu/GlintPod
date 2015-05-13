@@ -34,14 +34,18 @@ body {
 }
 
 #sec3 {
-  background-color:  #fff //#13c5f5; //13ACD9
+  background-color:  #fff
 }
 
 #sec4 {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 #sec5 {
+  background-color: #f0f0f0;
+}
+
+#sec6 {
   background-color: #5BC4C2;
 }
 
@@ -78,7 +82,7 @@ body {
 
 .dnArrow {
   position: relative;
-  top: 85%;
+  top: 90%;
   left: 50%;
   width: 30px;
   height: 50px;
@@ -141,13 +145,18 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.rhsText {
+.text {
+  color: #7e7e7e;
   font-size: 2.5em;
   font-weight:100;
   line-height: 1.5em;
-
+  margin: 0;
+  padding: 0;
 }
 
+.text.white {
+  color: #fff;
+}
 
 .FullPicSection {
   position: absolute;
@@ -188,86 +197,107 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.centerText {
-  color: #fff;
-  font-size: 3em;
-  font-weight: 100;
+
+.centerImageSmall {
+  height: 50%;
+  width: auto;
+
+}
+
+.fixedTopTextBox {
+  position: absolute;
+  top: 5%; //Top is fixed and will not be changed by translate
+  left: 50%;
+  width: 90%;
+  height: 40%;
+  padding: 0 20px;
+  overflow: hidden;
+  -webkit-transform: translate(-50%);// Y translate is not included because top is 10%
+  -moz-transform: translate(-50%); // Y translate is not included because top is 10%
+  -ms-transform: translate(-50%); // Y translate is not included because top is 10%
+  -o-transform: translate(-50%) ; // Y translate is not included because top is 10%
+  transform: translate(-50%); // Y translate is not included because top is 10%
+ }
+
+.leftTopCorner {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: auto;
+  height: auto;
+  font-size: 2.5em;
+}
+
+.rightBottomCorner {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  width: auto;
+  height: auto;
+  font-size: 2.5em;
+
+}
+
+
+.iconSet {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  height: 30%;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  line-height: 1.5em;
-
 }
 
-
-
-/*
-.shadowed {
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
-  filter: url(#drop-shadow);
-  -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
-  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
-}
-
-.bandDiv {
-  position: fixed;
-  top: 0;
-  height: 45px;
-  width: 100%;
-  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.7);
-}
-
-.bandLi {
-  float: left;
-  list-style: none;
+#icon1of4Box {
+  position: absolute;
+  left: 0%;
+  top: 0%;
   width: 25%;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  opacity: 0.9;
-}
-
-.imgContainer1 {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 90%;
-  z-index: -10;
-  overflow: hidden;//This willl hide the image which overflow over the container
-}
-
-.images {
- position: absolute;
-  left: 0;
-  top: 0;
-}
-
-
-.imgCaption {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  z-index: 1000;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%) ;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  color: rgba(255, 255, 255, 1);
-
-}
-
-
-.imgContainer2 {
-  top: 100px;
-  left: 100px;
-  width: 10%;
   height: 100%;
-  overflow: hidden;//This willl hide the image which overflow over the container
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
 }
 
-*/
+#icon2of4Box {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#icon3of4Box {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#icon4of4Box {
+  position: absolute;
+  left: 75%;
+  top: 0%;
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.iconSize {
+  width: auto;
+  height: 90%;
+}
+
+.iconSize2 {
+  width: auto;
+  height: 100%;
+}
+
