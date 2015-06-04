@@ -68,14 +68,14 @@ body {
 
 #sec1Container img {
   //width: 125px;
-  width: 48%;
   height: auto;
+  width: 28%;
+  min-width: 100pt;
 }
 
 .sec1Text {
   margin: 5px 0;
-  //font-size: 3.5em;
-  font-size: 350%;
+  font-size: 3.5em;
   font-weight: 100;
   line-height: 1.1em;
 
@@ -310,3 +310,23 @@ body {
   height: 100%;
 }
 
+@media only screen
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  #sec1Container img {
+    min-width: 250pt;
+  }
+  html {
+    font-size: 16pt;
+  }
+
+  .sec1Text {
+    font-size: 3.5em;
+    font-weight: 300;
+  }
+
+  .sec1Text.small {
+    font-size: 1.5em;
+  }
+
+}
